@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- css stylesheet -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Font Awesome Kits -->
+    <script src="https://kit.fontawesome.com/cd5b60fa60.js" crossorigin="anonymous"></script>
+    <!-- for seeing border, use: style="border: 3px solid orange;"-->
+</head>
+
+<body>
+    <header>
+        <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
+            <div class="container">
+                <a class="navbar-brand" href="#">
+                    <img src="images/logo.png" alt="">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div>
+                    <a style="text-decoration: none; color: black;" href="index.html">
+                        Home
+                    </a>
+                </div>
+            </div>
+        </nav>
+
+    </header>
+    <main>
+        <div class="container-fluid" style="width: 40%; margin-top: 100px; margin-bottom: 200px">
+            <form>
+                <div class="modal-body">
+                    <!-- Login Form  -->
+                    <div class="form-floating mb-3">
+                        <input id="login-email" type="email" class="form-control" id="floatingInput"
+                            placeholder="name@example.com" required>
+                        <label for="floatingInput">Email address</label>
+                        <div class="error-login-email" style="display: none;">
+                            <h5 style="color: red;"> Please enter your email. </h5>
+                        </div>
+                    </div>
+                    <div class="form-floating">
+                        <input id="login-password" type="password" class="form-control" id="floatingPassword"
+                            placeholder="Password" required>
+                        <label for="floatingPassword">Password</label>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+                    <button id="login-button" type="submit" class="btn btn-primary login-btn nav-btn"
+                        id="">Login</button>
+                </div>
+            </form>
+        </div>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+</body>
+<script src="js/logIn.js"></script>
+
+</html>
